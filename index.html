@@ -2,11 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sai Charan Cherapalli-MyPortfolio </title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="mediaqueries.css">
     
+<body>
+    <nav id="menu">
+        <div class="logo">Sai Charan</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sai Charan</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toogleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links" >
+                <li><a href="#about" onclick="toogleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toogleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toogleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toogleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_container">
+            <img src="source/profile.jpg" alt="image">
+            
+        </div>
+    </section>
+    <script src="port.js"></script>
 </body>
 </html>
